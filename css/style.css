@@ -1,0 +1,159 @@
+*{
+    padding:0;
+    margin:0;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align:center;
+}
+.clr{
+    clear:both;
+}
+/*==================
+common css ends
+===================*/
+
+/*================
+progress bar starts
+===================*/
+.progress-bar{
+    width:650px;
+    padding:10px;
+    box-sizing:border-box;
+    margin:50px auto;
+}
+.progress-bar ul li{
+    width:600px;
+    height:40px;
+    border:1px solid transparent;
+    margin:10px 0;
+    position:relative;
+}
+.progress-bar ul li:first-child{
+  border-color: teal;
+}
+.progress-bar ul li:first-child::before{
+  content:'';
+  /*width:20%; */
+  height:100%;
+  background-color:seagreen;
+  position:absolute;
+  top:0;
+  left:0;
+  animation:run1 2s linear forwards;
+  animation-delay:1s;
+ 
+}
+@keyframes run1{
+    0%{
+        width:0%;
+    }
+    100% {
+        width:20%;
+    }
+}
+
+
+.progress-bar ul li:nth-child(2){
+    border-color: #55c513;
+}
+.progress-bar ul li:nth-child(2)::before{
+   content:'';
+   /*width:35%; */
+   height:100%;
+   background-color:#2e808b;
+   position:absolute;
+   top:0;
+   left:0;
+   animation:run2 2s linear forwards;
+   animation-delay:2s;
+}
+@keyframes run2{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:35%;
+    }
+}
+
+
+.progress-bar ul li:nth-child(3){
+    border-color: #bfcc46;
+}
+.progress-bar ul li:nth-child(3)::before{
+    content:'';
+    /*width:50%; */
+    height:100%;
+    background-color:#d3201a;
+    position:absolute;
+    top:0;
+    left:0;
+    animation:run3 2s linear forwards;
+    animation-delay:3s;
+}
+
+@keyframes run3{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:50%;
+    }
+}
+
+.progress-bar ul li:nth-child(4){
+    border-color: #1a8fd3;
+}
+.progress-bar ul li:nth-child(4)::before{
+    content:'';
+    /*width:60%;
+    */height:100%;
+    background-color:#592e8b;
+    position:absolute;
+    top:0;
+    left:0;
+    animation:run4 2s linear forwards;
+    animation-delay:4s;
+} 
+
+@keyframes run4{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:60%;
+    }
+}
+
+.progress-bar ul li:last-child{
+    border-color: #bd297f;
+}
+.progress-bar ul li:last-child::before{
+    content:'';
+    /*width:70%; */
+    height:100%;
+    background-color:#b2f339;
+    position:absolute;
+    top:0;
+    left:0;
+    animation:run5 2s linear forwards;
+    animation-delay:5s;
+}
+@keyframes run5{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:70%;
+    }
+}
+
+/*================
+progress bar ends
+===================*/
